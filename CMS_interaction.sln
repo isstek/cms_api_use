@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS_interaction", "CMS_interaction\CMS_interaction.csproj", "{9CCBDD88-4AA5-4FEC-A7C3-420684C1E400}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMSServerConnect", "CMSServerConnect\CMSServerConnect.csproj", "{7CEAAF86-AF8F-4ABD-BCB4-5AE685AA7789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinDomain", "JoinDomain\JoinDomain.csproj", "{70A9B07B-60C6-473F-91B2-D520D05F7B16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CCBDD88-4AA5-4FEC-A7C3-420684C1E400}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CCBDD88-4AA5-4FEC-A7C3-420684C1E400}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CCBDD88-4AA5-4FEC-A7C3-420684C1E400}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CCBDD88-4AA5-4FEC-A7C3-420684C1E400}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CEAAF86-AF8F-4ABD-BCB4-5AE685AA7789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CEAAF86-AF8F-4ABD-BCB4-5AE685AA7789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CEAAF86-AF8F-4ABD-BCB4-5AE685AA7789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70A9B07B-60C6-473F-91B2-D520D05F7B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70A9B07B-60C6-473F-91B2-D520D05F7B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70A9B07B-60C6-473F-91B2-D520D05F7B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC8AD803-AD05-42B4-9B8B-68D478C94BFC}
+	EndGlobalSection
+EndGlobal
