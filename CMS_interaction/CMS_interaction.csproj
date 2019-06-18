@@ -193,12 +193,12 @@
     <ProjectReference Include="..\CMSServerConnect\CMSServerConnect.csproj">
       <Project>{7ceaaf86-af8f-4abd-bcb4-5ae685aa7789}</Project>
       <Name>CMSServerConnect</Name>
-      <Private>False</Private>
+      <Private>True</Private>
     </ProjectReference>
     <ProjectReference Include="..\JoinDomain\JoinDomain.csproj">
       <Project>{70a9b07b-60c6-473f-91b2-d520d05f7b16}</Project>
       <Name>JoinDomain</Name>
-      <Private>False</Private>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
