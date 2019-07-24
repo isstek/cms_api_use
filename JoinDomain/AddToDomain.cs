@@ -2,6 +2,7 @@
 using System.Net;
 using System.Management;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace JoinDomain
 {
@@ -113,7 +114,14 @@ namespace JoinDomain
 
                     //_connect_to_domain_result = (int)outParams["ReturnValue"];
 
-                    return (int)outParams["ReturnValue"] == 0;
+                    if (int.TryParse(outParams["ReturnValue"].ToString(), out _connect_to_domain_result))
+                        return _connect_to_domain_result == 0;
+                    else
+                    {
+                        MessageBox.Show(outParams.GetText(TextFormat.Mof));
+                        _connect_to_domain_result = 4;
+                        return false;
+                    }
                 }
                 catch (ManagementException e)
                 {
@@ -141,9 +149,15 @@ namespace JoinDomain
                     // Execute the method and obtain the return values.
                     ManagementBaseObject outParams = wmiObject.InvokeMethod("JoinDomainOrWorkgroup", inParams, null);
 
-                    _connect_to_domain_result = (int)outParams["ReturnValue"];
+                    if (int.TryParse(outParams["ReturnValue"].ToString(), out _connect_to_domain_result))
+                        return _connect_to_domain_result == 0;
+                    else
+                    {
+                        MessageBox.Show(outParams.GetText(TextFormat.Mof));
+                        _connect_to_domain_result = 4;
+                        return false;
+                    }
 
-                    return _connect_to_domain_result == 0;
                 }
                 catch (ManagementException e)
                 {
